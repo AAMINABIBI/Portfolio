@@ -58,7 +58,7 @@ nav ul li{
      width:60%;
      color:white;
     font-size:25px;
-    padding-top:1px;
+    padding:1px;
     margin:10px 20px;
     list-style:none;
 }
@@ -67,20 +67,38 @@ nav ul li a{
     text-decoration:none;
     font-size:18px;
     position:relative;
+    padding: 3px;
+   
 }
-/*nav ul li a::after{
+/*
+nav ul li a::after{
     content:'';
     width:0;
     height:3px;
-    background:#f6f114;
+    background:transparent;
     position:absolute;
     left:0;
     bottom:-6px;
     transition:0.5s;
 
 }*/
-nav ul li a:hover::after{
+.hero-pic img{
+    height: 100%;
     width:100%;
+    transition: 0.5s;
+    border-radius: 45%;
+    margin-left: 45px;
+}
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+
+nav ul li a:hover{
+    width:100%;
+    background-color:transparent;
+    transform:scale(1.5);
+    border-radius: 3px;
+    text-decoration:underline;
 }
     .header-text{
         margin-top:20%;
@@ -248,17 +266,20 @@ nav{
 .about-img{
     width: 90%;
     height: 80%;
-    object-fit: cover;
+    object-fit:cover;
     border-radius: 20px;
 }
-
-.download-cv-btn{
+.about-img:hover{
+    transform: scale(1.2);
+}
+.download-cv-btn a{
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 20px;
     color: white;
+    text-decoration: none;
     border: none;
     font-size: 16px;
     text-transform: capitalize;
@@ -267,7 +288,7 @@ nav{
     background: black;
 }
 
-.download-cv-btn:hover{
+.download-cv-btn:hover a{
     background: cadetblue;
     border-radius:10px;
     color:gold;
@@ -367,6 +388,13 @@ nav{
 }
 
 
+
+
+.skillset{
+    justify-content: center;
+    margin: auto;
+    transition:transform 0.1s;
+}
 /*<--portfolio--->*/
 
 
@@ -392,6 +420,8 @@ nav{
     border-radius:10px;
     display:block;
     transition:transform 0.5s;
+    object-fit:fill;
+    height:100%;
 }
 .layer{
     width:100%;
@@ -425,17 +455,7 @@ nav{
 
 }
 
-/*.work div{
-    /*background-color:red;*/
-      width:30%;
-    padding :10px;
-    font-size:13px;
-    font-weight:300;
-    margin:10px;
-     display:inline-block;
-    transition:background 0.5s, transform 0.5s;
-    border-radius:10px;
-}
+
 .work div:hover{
     background-color:lightgray;
     transform:translateY(-10px)
