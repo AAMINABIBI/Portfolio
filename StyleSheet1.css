@@ -639,10 +639,48 @@ nav ul li a:hover {
 }
 
 .map {
-    width: calc(50% - 10px); /* Adjusted width */
+    width: calc(130%);
     height: 300px;
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    /* margin-left: -0px; */
+    border: 10px solid #da255d;
+    border-radius: 30px;
     box-sizing: border-box;
+}
+
+/*footer*/
+footer {
+    background-color: #da255d;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info, .social-links {
+    flex: 1;
+    text-align: center;
+}
+
+.social-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links ul li {
+    margin-bottom: 10px;
+}
+
+.social-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-links ul li a i {
+    margin-right: 5px;
 }
